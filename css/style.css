@@ -1,0 +1,408 @@
+@charset "UTF-8";
+.fs-vsm {
+  font-size: 12px;
+}
+
+.fs-sm {
+  font-size: 14px;
+}
+
+.fs-md {
+  font-size: 19px;
+}
+
+.fs-lg, .section-title, .profile__container .profile-text h1, .service__container > h1, .portfolio > h1, .skill__container > h1, .contact__container > h1 {
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+.max-width-center, .profile__container, .service__container, .skill__container, .contact__container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.section-title, .profile__container .profile-text h1, .service__container > h1, .portfolio > h1, .skill__container > h1, .contact__container > h1 {
+  color: #429709;
+  text-align: center;
+}
+
+.flex, .profile__container {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Abel', "游教科書体 横用",  sans-serif, "YuKyokasho Yoko";
+  letter-spacing: 2px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  transform: translateY(-189px);
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  transition: transform .4s;
+  z-index: 3;
+  opacity: 0.9;
+  box-shadow: 0 2px 5px 1px #b9b7b7;
+  padding: 10px 0;
+}
+
+.header__nav {
+  height: 100%;
+}
+
+.header__ul {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.header__li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.header__li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__a {
+  text-decoration: none !important;
+  color: #333;
+}
+
+.header__a:hover {
+  color: #429709 !important;
+}
+
+.header.open {
+  transform: translateY(0);
+}
+
+.top-wrapper {
+  background-image: url(../img/alex-loup-2zDw14yCYqk-unsplash.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 8px;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 12px 7px #adabab;
+}
+
+.top-wrapper > h1 {
+  text-align: center;
+  color: #333;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-wrapper .menu-icon {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  right: 8px;
+  top: 8px;
+  z-index: 10;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none !important;
+  background-color: #aaa7a7;
+  opacity: 0.9;
+}
+
+.top-wrapper .menu-icon > span {
+  width: 26px;
+  height: 2px;
+  margin-bottom: 9px;
+  background-color: #fff;
+  display: block;
+  margin: 9px auto;
+  transition: all .6s;
+}
+
+.top-wrapper .menu-icon > span:nth-child(1) {
+  margin-top: 8px;
+}
+
+.top-wrapper .menu-icon > span:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.top-wrapper .menu-icon.open > span:nth-child(1) {
+  transform: translateY(11px) rotate(225deg);
+}
+
+.top-wrapper .menu-icon.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.top-wrapper .menu-icon.open > span:nth-child(3) {
+  transform: translateY(-11px) rotate(-225deg);
+}
+
+.profile {
+  padding: 40px 0 20px 0;
+}
+
+.profile__container .figure {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.profile__container .figure .slidein {
+  width: 200px;
+  opacity: 0;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transform: translateX(-150%);
+  transition: all 1s;
+}
+
+.profile__container .profile-text {
+  border-top: 2px dashed #429709;
+  border-bottom: 2px dashed #429709;
+  padding: 20px 0;
+}
+
+.service {
+  padding: 20px 0;
+}
+
+.service__container > h1 {
+  margin-bottom: 20px;
+}
+
+.service__up, .service__under {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__item {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 18px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 8px 2px #b6b3b3;
+}
+
+.service__item > h1 {
+  text-align: center;
+  color: #5c5959;
+  margin: 10px 0;
+}
+
+.service__item .fas, .service__item .far, .service__item .fab {
+  font-size: 55px;
+  text-align: center;
+  display: block;
+}
+
+.portfolio {
+  padding: 20px 0;
+}
+
+.portfolio > h1 {
+  margin-bottom: 25px;
+}
+
+.portfolio__item {
+  text-align: center;
+}
+
+.portfolio__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.portfolio__item p {
+  text-align-last: left;
+}
+
+.portfolio img {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.skill {
+  padding: 20px 0;
+}
+
+.skill__container > h1 {
+  margin-bottom: 20px;
+}
+
+.skill__set {
+  background-color: #eee;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.skill__item {
+  text-align: center;
+}
+
+.skill__item:last-child {
+  margin-left: 7px;
+}
+
+.skill__item .fab {
+  font-size: 30px;
+}
+
+.skill__item .fa-css3-alt {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.skill__item .fa-sass {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.contact {
+  padding: 20px 0;
+}
+
+.contact__container {
+  text-align: center;
+}
+
+.contact__container .contact-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #333;
+  position: relative;
+  margin: 30px auto;
+}
+
+.contact__container .contact-icon .far {
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .flex, .profile__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .profile {
+    padding: 70px 0 35px 0;
+  }
+  .profile__container {
+    justify-content: space-between;
+  }
+  .profile__container .figure {
+    padding-bottom: 0;
+    flex-basis: 40%;
+    align-items: center;
+    display: flex;
+  }
+  .profile__container .figure .slidein {
+    width: 80%;
+    display: block;
+  }
+  .profile__container .profile-text {
+    flex-basis: 60%;
+  }
+  .service {
+    padding: 35px 0 5px 0;
+  }
+  .service__up, .service__under {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .service__item {
+    flex-basis: 47%;
+  }
+  .portfolio {
+    padding: 35px 0;
+  }
+  .skill {
+    padding: 35px 0;
+  }
+  .skill__item .fab {
+    font-size: 60px;
+  }
+  .skill__item .fa-css3-alt {
+    margin-right: 15px;
+    margin-left: 30px;
+  }
+  .skill__item .fa-sass {
+    margin-left: 15px;
+    margin-right: 30px;
+  }
+  .contact {
+    padding: 35px 0;
+  }
+}
+
+@media (min-width: 950px) {
+  .fs-vsm {
+    font-size: 15px;
+  }
+  .fs-sm {
+    font-size: 18px;
+  }
+  .fs-md {
+    font-size: 25px;
+  }
+  .fs-lg, .section-title, .profile__container .profile-text h1, .service__container > h1, .portfolio > h1, .skill__container > h1, .contact__container > h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .header {
+    transform: none;
+    height: 65px;
+    padding: 0 30px;
+  }
+  .header__ul {
+    justify-content: center;
+    display: flex;
+  }
+  .header__li:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .header__a {
+    line-height: 65px;
+    color: #333;
+  }
+  .top-wrapper {
+    background-image: url(../img/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg);
+  }
+  .top-wrapper > h1 {
+    left: 60%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .top-wrapper .menu-icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile {
+  padding: 70px 0 35px 0;
+  &__container {
+    justify-content: space-between;
+    .figure {
+      padding-bottom: 0;
+      flex-basis: 40%;
+      align-items: center;
+      display: flex;
+      .slidein {
+        width: 80%;
+        display: block;
+      }
+    }
+    .profile-text {
+      flex-basis: 60%;
+    }
+  }
+}
+
+.service {
+  padding: 35px 0 5px 0;
+  &__up,
+  &__under {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    flex-basis: 47%;
+  }
+}
+
+.portfolio {
+  padding: 35px 0;
+}
+
+.skill {
+  padding: 35px 0;
+  &__item {
+    .fab {
+      font-size: 60px;
+    }
+    .fa-css3-alt {
+      margin-right: 15px;
+      margin-left: 30px;
+    }
+    .fa-sass {
+      margin-left: 15px;
+      margin-right: 30px;
+    }
+  }
+}
+
+.contact {
+  padding: 35px 0;
+}

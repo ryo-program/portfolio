@@ -1,0 +1,45 @@
+.fs-vsm {
+  font-size: 15px;
+} 
+.fs-sm {
+  font-size: 18px;
+}
+.fs-md {
+  font-size: 25px;
+}
+.fs-lg {
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+.header {
+  transform: none;
+  height: 65px;
+  padding: 0 30px;
+  &__ul {
+    justify-content: center;
+    display: flex;
+  }
+  &__li {
+    &:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+  &__a {
+    line-height: 65px;
+    color: $cBlack;
+  }
+}
+
+.top-wrapper {
+  background-image: url(../img/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg);
+  & > h1 {
+    left: 60%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .menu-icon {
+    display: none;
+  }
+}
